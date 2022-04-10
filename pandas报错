@@ -1,0 +1,4 @@
+# 报错：Can't get attribute '_unpickle_block' pandas._libs.internals internals.cpython-38-x86_64-linux-gnu.so
+错误原因
+pickle序列化模型与反序列化模型时，使用的pandas版本不一致导致的错误。保持pandas版本一致即可。
+
