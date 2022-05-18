@@ -1,0 +1,9 @@
+# df的强制转换数据类型
+df.astype('数据类型')                      #改变整个df的数据类型
+df['列名'].astype('数据类型')              #仅改变某一列的数据类型
+
+# df.inset()
+loc ： int #使用整型数据，是列数据插入的位置，必须是0到len(columns)之间的数
+column ： string, number, or hashable object #类型可以是字符串、数字或者object。表示列的标签名
+value ： int, Series, or array-like # 整数、Series或者数组型数据。是插入列的值
+allow_duplicates ： bool, optional # 布尔型数据，可选参数。如果某个列名在dataframe中已经存在，将allow_duplicates置为true才可以将同样的列名插入。
