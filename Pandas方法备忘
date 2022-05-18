@@ -15,12 +15,10 @@ allow_duplicates ： bool, optional # 布尔型数据，可选参数。如果某
     如果列名不在第一个df出现，则将以新的列名添加，没有对应内容的会为空。
     不会改变原来的df，只会创建一个新的df，包含拼接的数据。
     注意：因为会创建一个新的 index 和 data buffer，所以效率不高。pd.concat()效率更高，而且功能更强大
-
+# ==pd.concat()
 pd.concat( objs, axis=0, join=‘outer’, join_axes=None,ignore_index=False, keys=None, levels=None, names=None, verify_integrity=False, sort=None, copy=True,)
 objs 表示需要连接的对象，比如：[df1, df2]，需要将合并的数据用综括号包围；
 axis=0 表拼接方式是上下堆叠，当axis=1表示左右拼接；
 join 参数控制的是外连接还是内连接，join='outer’表示外连接，保留两个表中的所有信息；join="inner"表示内连接，拼接结果只保留两个表共有的信息；
 join_axes参数是在内连接时选择要完整保留哪个表的索引，但是这个参数在官方文档中提醒即将被弃用，所以不做详细讲解，只看一下join参数的表现吧；
-————————————————
-版权声明：本文为CSDN博主「xue_11」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/xue_11/article/details/118424380
+
