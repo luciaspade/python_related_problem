@@ -3,6 +3,7 @@ df.astype('数据类型')                      #改变整个df的数据类型
 df['列名'].astype('数据类型')              #仅改变某一列的数据类型
 
 # df.inset()
+4个参数：插入位置、列标签名、列的值、同名情况的处理
 loc ： int #使用整型数据，是列数据插入的位置，必须是0到len(columns)之间的数
 column ： string, number, or hashable object #类型可以是字符串、数字或者object。表示列的标签名
 value ： int, Series, or array-like # 整数、Series或者数组型数据。是插入列的值
